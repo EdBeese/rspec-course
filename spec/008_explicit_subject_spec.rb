@@ -17,3 +17,20 @@ RSpec.describe Hash do
     end
   end
 end
+
+# Test
+RSpec.describe Array do
+  subject(:sally) do
+    ['one', 'two']
+  end
+
+  it 'has two elements and elements can be removed' do
+    expect(subject.length).to eq(2)
+    subject.pop
+    expect(subject.length).to eq(1)
+  end
+
+  it 'has not been altered by the first test' do
+    expect(sally).to eq(['one', 'two'])
+  end
+end
