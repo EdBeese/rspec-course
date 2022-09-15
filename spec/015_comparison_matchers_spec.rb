@@ -6,6 +6,7 @@ RSpec.describe 'comparison matchers' do
     expect(22).to be <= 23
   end
 
+  # Instead of instantiating the class, this
   describe 100 do
     it { is_expected.to be > 90 }
     it { is_expected.to be < 101 }
