@@ -1,5 +1,5 @@
 RSpec.describe 'satisfy matcher' do
-  subject { 'racecars' }
+  subject { 'racecar' }
 
   # Our custom method is checking that the word is a palindrome
   it 'is a palindrome' do
